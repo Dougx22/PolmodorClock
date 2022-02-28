@@ -84,7 +84,7 @@ window.onload = function () {
     timeBreak.hidden = false
     setTimeout(function () {
       timeBreak.hidden = true
-    }, 5.0 * 1000)
+    }, 3.0 * 1000)
   }
 
   function showMinutes(minS, minB) {
