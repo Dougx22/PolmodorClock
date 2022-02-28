@@ -1,5 +1,5 @@
 window.onload = function () {
-  ScreenOrientation.lock('landscape')
+  
   let seconds = 00
   let tens = 00
   let appendSeconds = document.getElementById('seconds')
