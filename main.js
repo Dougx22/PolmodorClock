@@ -59,7 +59,7 @@ window.onload = function () {
   }
 
   function startCheck() {
-    if (pattern1.checked && seconds === 10) {
+    if (pattern1.checked && seconds === 25) {
       pattern()
       restart()
       showMinutes(1, 5)
