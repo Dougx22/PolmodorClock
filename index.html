@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <title>MrPolmodoro Clock</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Mr. Polmodoro <br />Clock</h1>
+
+      <p><span id="seconds">00</span><span>:</span><span id="tens">00</span></p>
+
+      <div class="btn-container">
+        <button id="btn-start">Start</button>
+        <button id="btn-stop">Stop</button>
+        <button id="btn-reset">Reset</button>
+      </div>
+
+      <div class="selectTimer">
+        <h2 class="titleTimer">Timer</h2>
+        <div class="options">
+          <label class="checkbox">
+            <input id="option1" type="checkbox" name="timer" />25min/5min
+          </label>
+          <label class="checkbox">
+            <input id="option2" type="checkbox" name="timer" />40min/8min
+          </label>
+          <label class="checkbox">
+            <input id="option3" type="checkbox" name="timer" />50min/10min
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div id="timeBreak" hidden>
+      <dialog class="dialogo" open>
+        <p>
+          Time Break!!<br />
+          You have <span id="minutesSave">s</span> for save and
+          <span id="minutesBreak">b</span> for relax!!
+        </p>
+      </dialog>
+
+      <audio id="sound" src="/Alarm.mp3"></audio>
+    </div>
+  </body>
+</html>
